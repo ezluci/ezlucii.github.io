@@ -1,1 +1,51 @@
-<html><body><p>hi</p></body></html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p
+            {
+                margin-left: 30px;
+            }
+        </style>
+        <script>
+            var imgCount = 1;
+            function Precedent()
+            {
+                if (--imgCount == 0)
+                    imgCount = 4;
+                var imagine = "d" + imgCount + ".jpg";
+                document.getElementById("dadada").src = imagine;
+                if (imgCount == 0)
+                    imgCount = 4;
+                document.getElementById("urmatoranchor").innerHTML = "urmator (" + imagine + ")";
+            }
+            function Urmator()
+            {
+                if (++imgCount == 5)
+                    imgCount = 1;
+                var imagine = "d" + imgCount + ".jpg";
+                document.getElementById("dadada").src = imagine;
+                if (imgCount == 5)
+                    imgCount = 1;
+                document.getElementById("urmatoranchor").innerHTML = "urmator (" + imagine + ")";
+            }
+        </script>
+    </head>
+    <body style="font-size: 20px; background-color: gray; color: white;">
+        <h1 style="margin-left: 35px; color: black;">Mihai Florescu</h1>
+        <br>
+        <p>Mihai Florescu (ミハイ フロレスク, Mihai Furoresuku?) is a member of the Inugami Detective Agency and a vampire.</p>
+        <img width="200" src="ceva.png">
+        <p>Mihai has the appearance of a young man, though his real age is unknown. He has silver hair that reaches above his shoulders. His eyes have a down-turned shaped and a bright red hue. He has sharp teeth and nails, alongside pointy ears.</p>
+        <p>Mihai's outfit consists of a mid length-sleeved gray sweatshirt with matching gray pants. He'll sometimes also be wearing his black, red, and silver over-the-ear gaming headphones around his neck.</p>
+        <p>Mihai is a callous and self-centered individual who considers the people around him to be toys for his amusement. He is willing to lie and manipulate others into perilous situations for his own entertainment. He does not seem to be able to understand how other people react to the result of his actions. Even Inugami considered Mihai to be potentially dangerous and volatile when he is in a bad mood. However, he is not actively malicious and is willing to offer assistance as long as he finds the situation interesting</p>
+        <p>Although he has a nonchalant and laidback attitude, Mihai has surprising diligence and dedication to whatever he has set out to do. Once he has agreed to work on something, he will deliver the best possible result, even to the detriment of his temporary enjoyment. For example, when he agreed to train Shiki in a video game, he went out of his way to prepare him food and bedding, among other in-game caretaking functions, either to ensure Shiki is in the best of health, or to not break immersion of his video game</p>
+        <br>
+        <a id="urmatoranchor" href="javascript:Urmator()">urmator (d1.jpg)</a>
+        <br>
+        <a id="precedentanchor" href="javascript:Precedent()">precedent</a>
+        <br>
+        <img id="dadada" width="200" src="d1.jpg">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </body>
+</html>
